@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Calculate compound wealth gains through SIP/Lumpsum investments and estimate IPO allotment probability rates using subscription metrics.">
+    <title>Financial Planning Calculators & IPO Allotment Predictor | FinanceView</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="header">
+        <div class="container nav-wrapper">
+            <a href="index.html" class="logo" id="siteLogo">
+                <div class="logo-icon">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                    </svg>
+                </div>
+                Finance<span>View</span>
+            </a>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="ipos.html" class="nav-link">IPO Reviews</a></li>
+                <li><a href="tools.html" class="nav-link active">Calculators</a></li>
+                <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <a href="services.html#book-advisor" class="btn btn-primary">Book Consultation</a>
+            </div>
+
+            <button class="hamburger" id="hamburgerMenu" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main style="margin-top: 80px;">
+        <!-- Hero Header -->
+        <section class="hero" style="padding: 6rem 0 3rem;">
+            <div class="container" style="text-align: center; max-width: 800px;">
+                <span class="hero-tag">Financial Desks</span>
+                <h1 class="hero-title" style="font-size: 3rem;">Interactive Wealth Planners</h1>
+                <p class="hero-desc" style="margin: 1.5rem auto 0;">
+                    Simulate compounding trajectories or compute mathematical allotment probabilities for active IPO offerings under various subscription parameters.
+                </p>
+            </div>
+        </section>
+
+        <!-- Section 1: SIP & Lumpsum Calculator -->
+        <section style="padding-bottom: 5rem;">
+            <div class="container">
+                <div class="section-header" style="text-align: left; margin-bottom: 2.5rem; max-width: 100%;">
+                    <h2 style="font-size: 2rem;">1. Growth Accumulator (SIP & Lumpsum)</h2>
+                    <p>Track compound returns on monthly systematic plans or large singular outlays over your target tenure.</p>
+                </div>
+
+                <div class="calc-grid">
+                    <!-- Left: Sliders Panel -->
+                    <div class="calc-panel">
+                        <div class="calc-tabs">
+                            <button class="calc-tab active" id="tabSIP">Systematic Investment Plan (SIP)</button>
+                            <button class="calc-tab" id="tabLumpsum">One-Time Lumpsum</button>
+                        </div>
+
+                        <!-- SIP Form inputs -->
+                        <div id="sipInputs">
+                            <div class="calc-slider-group">
+                                <div class="slider-header">
+                                    <span class="slider-label">Monthly Investment</span>
+                                    <span class="slider-val-box" id="sipMonthlyAmtVal">₹25,000</span>
+                                </div>
+                                <input type="range" class="slider-input" id="sipMonthlyAmt" min="1000" max="500000" step="1000" value="25000" aria-label="Monthly investment amount slider">
+                                <div class="slider-labels-row">
+                                    <span>₹1k</span>
+                                    <span>₹1L</span>
+                                    <span>₹2.5L</span>
+                                    <span>₹5L</span>
+                                </div>
+                            </div>
+
+                            <div class="calc-slider-group">
+                                <div class="slider-header">
+                                    <span class="slider-label">Expected Annual Return Rate</span>
+                                    <span class="slider-val-box" id="sipReturnRateVal">12%</span>
+                                </div>
+                                <input type="range" class="slider-input" id="sipReturnRate" min="1" max="30" step="0.5" value="12" aria-label="Expected annual return rate slider">
+                                <div class="slider-labels-row">
+                                    <span>1%</span>
+                                    <span>10%</span>
+                                    <span>20%</span>
+                                    <span>30%</span>
+                                </div>
+                            </div>
+
+                            <div class="calc-slider-group">
+                                <div class="slider-header">
+                                    <span class="slider-label">Investment Time Horizon</span>
+                                    <span class="slider-val-box" id="sipPeriodVal">10 Years</span>
+                                </div>
+                                <input type="range" class="slider-input" id="sipPeriod" min="1" max="40" step="1" value="10" aria-label="Investment time horizon slider">
+                                <div class="slider-labels-row">
+                                    <span>1 Yr</span>
+                                    <span>10 Yrs</span>
+                                    <span>25 Yrs</span>
+                                    <span>40 Yrs</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Lumpsum Form inputs (Hidden on load) -->
+                        <div id="lumpsumInputs" style="display: none;">
+                            <div class="calc-slider-group">
+                                <div class="slider-header">
+                                    <span class="slider-label">Total Principal Outlay</span>
+                                    <span class="slider-val-box" id="lumpAmountVal">₹1,00,000</span>
+                                </div>
+                                <input type="range" class="slider-input" id="lumpAmount" min="5000" max="10000000" step="5000" value="100000" aria-label="Lumpsum amount slider">
+                                <div class="slider-labels-row">
+                                    <span>₹5k</span>
+                                    <span>₹10L</span>
+                                    <span>₹50L</span>
+                                    <span>₹1Cr</span>
+                                </div>
+                            </div>
+
+                            <div class="calc-slider-group">
+                                <div class="slider-header">
+                                    <span class="slider-label">Expected Annual Return Rate</span>
+                                    <span class="slider-val-box" id="lumpReturnRateVal">12%</span>
+                                </div>
+                                <input type="range" class="slider-input" id="lumpReturnRate" min="1" max="30" step="0.5" value="12" aria-label="Expected lumpsum return rate slider">
+                                <div class="slider-labels-row">
+                                    <span>1%</span>
+                                    <span>10%</span>
+                                    <span>20%</span>
+                                    <span>30%</span>
+                                </div>
+                            </div>
+
+                            <div class="calc-slider-group">
+                                <div class="slider-header">
+                                    <span class="slider-label">Investment Time Horizon</span>
+                                    <span class="slider-val-box" id="lumpPeriodVal">10 Years</span>
+                                </div>
+                                <input type="range" class="slider-input" id="lumpPeriod" min="1" max="40" step="1" value="10" aria-label="Lumpsum tenure horizon slider">
+                                <div class="slider-labels-row">
+                                    <span>1 Yr</span>
+                                    <span>10 Yrs</span>
+                                    <span>25 Yrs</span>
+                                    <span>40 Yrs</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Results Panel -->
+                    <div class="calc-results-sidebar">
+                        <div class="results-card">
+                            <h3 style="font-size: 1.25rem; margin-bottom: 1.5rem; text-transform: uppercase; color: var(--accent-secondary);">Compounding Results</h3>
+                            
+                            <div class="results-list">
+                                <div class="result-row">
+                                    <span class="result-label">Principal Invested</span>
+                                    <span class="result-value" id="resInvested">₹30,00,000</span>
+                                </div>
+                                <div class="result-row">
+                                    <span class="result-label">Estimated Gains</span>
+                                    <span class="result-value text-emerald" id="resEstGains">₹27,51,250</span>
+                                </div>
+                                <div class="result-row" style="border-top: 1px dashed rgba(255,255,255,0.1); padding-top: 1.5rem;">
+                                    <span class="result-label" style="font-weight: 700;">Total Wealth Value</span>
+                                    <span class="result-value result-value-highlight" id="resTotalWealth">₹57,51,250</span>
+                                </div>
+                            </div>
+
+                            <button class="btn btn-primary" style="width: 100%;" onclick="window.showToast('Compounding simulation snapshot saved. Sign up to download full projections PDF!');">Export Wealth Projection</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: IPO Allotment Probability Predictor -->
+        <section class="section-padding" style="background: var(--bg-secondary); border-top: 1px solid var(--border-light); border-bottom: 1px solid var(--border-light);">
+            <div class="container">
+                <div class="section-header" style="text-align: left; margin-bottom: 2.5rem; max-width: 100%;">
+                    <h2 style="font-size: 2rem;">2. IPO Allotment Probability Predictor</h2>
+                    <p>Determine your statistical chances of getting allotted a lot in active oversubscribed public offerings.</p>
+                </div>
+
+                <div class="calc-grid">
+                    <!-- Left inputs -->
+                    <div class="calc-panel">
+                        <div class="form-group">
+                            <label for="predIpoSelect">Select Active IPO Review</label>
+                            <select class="form-control" id="predIpoSelect">
+                                <option value="">-- Loading active databases --</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="predCategory">Bidding Allotment Category</label>
+                            <select class="form-control" id="predCategory">
+                                <option value="retail">Retail Investor (Bid size < ₹2 Lakhs)</option>
+                                <option value="nii">HNI / NII Investor (Bid size > ₹2 Lakhs)</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="slider-header">
+                                <label for="predLots">Number of Lots Applied</label>
+                                <span class="slider-val-box" id="predLotsVal">1 Lot (15 shares)</span>
+                            </div>
+                            <input type="range" class="slider-input" id="predLots" min="1" max="15" step="1" value="1">
+                            <div class="slider-labels-row">
+                                <span>1 Lot</span>
+                                <span>5 Lots</span>
+                                <span>10 Lots</span>
+                                <span>15 Lots</span>
+                            </div>
+                        </div>
+
+                        <div style="background: rgba(255,255,255,0.02); border: 1px solid var(--border-light); border-radius: 10px; padding: 1rem; margin-top: 2rem; display: flex; justify-content: space-between; align-items: center;">
+                            <span style="font-size: 0.9rem; color: var(--text-secondary);">Selected Category Subscription:</span>
+                            <span id="predSubRateVal" style="font-family: var(--font-heading); font-weight: 700; color: var(--accent-secondary);">0.00x</span>
+                        </div>
+                    </div>
+
+                    <!-- Right Circular Allotment Chance Result -->
+                    <div class="calc-results-sidebar">
+                        <div class="results-card" style="border-color: rgba(14, 165, 233, 0.2);">
+                            <h3 style="font-size: 1.15rem; margin-bottom: 1.5rem; text-transform: uppercase; color: var(--accent-secondary);">Probability Result</h3>
+                            
+                            <div class="chance-badge">
+                                <span class="chance-number" id="resultChanceNum">0%</span>
+                                <span class="chance-lbl">Allotment Chance</span>
+                            </div>
+
+                            <div class="meter-wrapper">
+                                <div class="meter-fill" id="resultChanceMeter" style="width: 0%;"></div>
+                            </div>
+
+                            <h4 id="resultChanceVerdict" style="font-size: 1.25rem; margin-bottom: 1rem; color: var(--text-primary);">Awaiting Parameters</h4>
+                            
+                            <p id="proTipText" style="font-size: 0.85rem; color: var(--text-secondary); text-align: left; line-height: 1.5; padding: 1rem; background: rgba(255,255,255,0.02); border: 1px solid var(--border-light); border-radius: 10px;">
+                                Select an active IPO from the database options on the left to compute lottery odds.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="logo" style="margin-bottom: 1.5rem;">
+                    <div class="logo-icon">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                        </svg>
+                    </div>
+                    Finance<span>View</span>
+                </a>
+                <p>Sophisticated financial client advisory, custom wealth plans, and institutional IPO intelligence under one platform.</p>
+                <div class="footer-socials">
+                    <a href="#" class="social-icon">TW</a>
+                    <a href="#" class="social-icon">LN</a>
+                    <a href="#" class="social-icon">YT</a>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="footer-title">Pages</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home Landing</a></li>
+                    <li><a href="services.html">Client Services</a></li>
+                    <li><a href="ipos.html">IPO Review Center</a></li>
+                    <li><a href="tools.html">SIP Calculators</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="footer-title">Resources</h4>
+                <ul class="footer-links">
+                    <li><a href="#" onclick="window.showToast('Disclaimer: FinanceView is an independent research house. Past performance does not guarantee future returns.', 'error'); return false;">Disclaimer Info</a></li>
+                    <li><a href="#" onclick="window.showToast('Privacy Policy: All client data is encrypted and held under strict fiduciary bounds.')">Privacy Policy</a></li>
+                    <li><a href="#" onclick="window.showToast('Support: Reach out to portal support at support@financeview.com')">Support Desk</a></li>
+                    <li><a href="#" onclick="window.showToast('Careers: We are looking for research interns! Send resume to hr@financeview.com')">Join Our Team</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-newsletter">
+                <h4 class="footer-title">Subscribe to GMP Updates</h4>
+                <p>Get premium daily analyst notes on upcoming IPO subscription rates and grey market valuations.</p>
+                <form class="newsletter-form" onsubmit="event.preventDefault(); window.showToast('Subscribed! IPO alerts will be sent to your email.'); this.reset();">
+                    <input type="email" placeholder="name@domain.com" required aria-label="Email address for newsletter">
+                    <button class="btn btn-primary" type="submit" style="padding: 0.75rem 1rem;">Join</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <span>&copy; 2026 FinanceView Advisory Services Pvt Ltd. All rights reserved.</span>
+            <span>Registered Investment Advisor #INA882901</span>
+        </div>
+    </footer>
+
+    <!-- Load databases, ChartJS, and local controllers -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/ipo.js"></script>
+    <script src="js/calculators.js"></script>
+</body>
+</html>

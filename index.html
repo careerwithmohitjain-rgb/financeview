@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="FinanceView is a premium, client-first wealth management, financial advisory, and comprehensive IPO analysis portal. Explore deep analyst insights, subscription tracks, and tools.">
+    <title>FinanceView | Premium Wealth Advisory & IPO Reviews</title>
+    <!-- Fonts -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="header">
+        <div class="container nav-wrapper">
+            <a href="index.html" class="logo" id="siteLogo">
+                <div class="logo-icon">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                    </svg>
+                </div>
+                Finance<span>View</span>
+            </a>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="ipos.html" class="nav-link">IPO Reviews</a></li>
+                <li><a href="tools.html" class="nav-link">Calculators</a></li>
+                <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <a href="services.html#book-advisor" class="btn btn-primary">Book Consultation</a>
+            </div>
+
+            <button class="hamburger" id="hamburgerMenu" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main style="margin-top: 80px;">
+        <!-- Live Ticker Banner -->
+        <section class="ticker-wrap" aria-label="Live Market and IPO Rates">
+            <div class="ticker">
+                <div class="ticker-item">
+                    <span class="ticker-label">Apex Cyber IPO:</span>
+                    <span class="ticker-value text-emerald">₹545</span>
+                    <span class="ticker-badge bg-emerald-opaque text-emerald">GMP +26%</span>
+                </div>
+                <div class="ticker-item">
+                    <span class="ticker-label">Solaris Green IPO:</span>
+                    <span class="ticker-value text-emerald">₹195</span>
+                    <span class="ticker-badge bg-emerald-opaque text-emerald">GMP +43%</span>
+                </div>
+                <div class="ticker-item">
+                    <span class="ticker-label">NovaGene Diagnostic:</span>
+                    <span class="ticker-value text-danger">₹360</span>
+                    <span class="ticker-badge bg-danger-opaque text-danger">GMP -3%</span>
+                </div>
+                <div class="ticker-item">
+                    <span class="ticker-label">Quantum AI (Upcoming):</span>
+                    <span class="ticker-value text-cyber">₹900</span>
+                    <span class="ticker-badge bg-cyber-opaque text-cyber">GMP +42%</span>
+                </div>
+                <div class="ticker-item">
+                    <span class="ticker-label">Helios Resorts (Listed):</span>
+                    <span class="ticker-value text-emerald">₹580</span>
+                    <span class="ticker-badge bg-emerald-opaque text-emerald">Listed +35%</span>
+                </div>
+                <!-- Duplicate items for infinite marquee effect -->
+                <div class="ticker-item">
+                    <span class="ticker-label">Apex Cyber IPO:</span>
+                    <span class="ticker-value text-emerald">₹545</span>
+                    <span class="ticker-badge bg-emerald-opaque text-emerald">GMP +26%</span>
+                </div>
+                <div class="ticker-item">
+                    <span class="ticker-label">Solaris Green IPO:</span>
+                    <span class="ticker-value text-emerald">₹195</span>
+                    <span class="ticker-badge bg-emerald-opaque text-emerald">GMP +43%</span>
+                </div>
+                <div class="ticker-item">
+                    <span class="ticker-label">NovaGene Diagnostic:</span>
+                    <span class="ticker-value text-danger">₹360</span>
+                    <span class="ticker-badge bg-danger-opaque text-danger">GMP -3%</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <div class="hero-tag">
+                        <svg width="12" height="12" viewBox="0 0 20 20" fill="currentColor" style="margin-right: 4px;">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
+                        </svg>
+                        Finance Advisory Redefined
+                    </div>
+                    <h1 class="hero-title">
+                        Grow Wealth with <span class="text-gradient">Data-Driven Advisory</span> & IPO Reviews
+                    </h1>
+                    <p class="hero-desc">
+                        Maximize your investment growth with our bespoke portfolio advisory services and industry-acclaimed, institutional-grade IPO research. We translate financial complexity into absolute clarity.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="services.html" class="btn btn-primary">Our Advisory Services</a>
+                        <a href="ipos.html" class="btn btn-secondary">Explore IPO Reviews</a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <h3>$1.2B+</h3>
+                            <p>Assets Under Advice</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>98.7%</h3>
+                            <p>Client Retention</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>150+</h3>
+                            <p>IPOs Evaluated</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="hero-visual-bg"></div>
+                    <div class="hero-card">
+                        <div class="card-glowing-dots"></div>
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
+                            <span style="font-weight: 700; text-transform: uppercase; font-size: 0.75rem; letter-spacing: 0.05em; color: var(--accent-secondary);">IPO Spotlight</span>
+                            <span class="ipo-badge badge-active">Active</span>
+                        </div>
+                        <h2 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Solaris Green Energy</h2>
+                        <p style="color: var(--text-secondary); font-size: 0.85rem; margin-bottom: 1.5rem;">Renewable Utilities &bull; ₹2,200 Cr Issue</p>
+                        
+                        <div style="background: rgba(255,255,255,0.03); border: 1px solid var(--border-light); border-radius: 12px; padding: 1rem; margin-bottom: 1.5rem;">
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem; font-size: 0.8rem;">
+                                <span style="color: var(--text-secondary);">Subscription Rate:</span>
+                                <span style="font-weight: 700; color: var(--accent-primary);">19.2x</span>
+                            </div>
+                            <div class="ipo-progress-bar-bg" style="height: 8px;">
+                                <div class="ipo-progress-bar-fg" style="width: 85%;"></div>
+                            </div>
+                        </div>
+
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 1.5rem;">
+                            <div>
+                                <span style="font-size: 0.7rem; color: var(--text-muted); display: block; text-transform: uppercase;">GMP Premium</span>
+                                <span style="font-weight: 700; color: var(--accent-primary); font-size: 1.1rem;">+₹85 (43.5%)</span>
+                            </div>
+                            <div style="text-align: right;">
+                                <span style="font-size: 0.7rem; color: var(--text-muted); display: block; text-transform: uppercase;">Analyst Rating</span>
+                                <span style="font-weight: 700; color: var(--accent-primary); font-size: 1.1rem;">APPLY</span>
+                            </div>
+                        </div>
+                        
+                        <div style="display: flex; gap: 0.75rem;">
+                            <a href="ipos.html" class="btn btn-primary" style="flex: 1; padding: 0.6rem 0.5rem; font-size: 0.85rem;">View Analysis</a>
+                            <a href="tools.html?ipo=solaris-energy" class="btn btn-outline" style="flex: 1; padding: 0.6rem 0.5rem; font-size: 0.85rem; text-align: center;">Allotment Chances</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="section-padding" style="background: var(--bg-secondary); border-top: 1px solid var(--border-light); border-bottom: 1px solid var(--border-light);">
+            <div class="container">
+                <div class="section-header">
+                    <span class="hero-tag">Services Overview</span>
+                    <h2>Fiduciary Financial & Client Services</h2>
+                    <p>We translate financial complexity into absolute clarity. Explore our core services designed to secure and grow your capital under a pure fee-only mandate.</p>
+                </div>
+
+                <div class="services-grid" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));">
+                    <!-- Service 1: Insurance -->
+                    <div class="glass-card service-card">
+                        <div class="service-card-icon" style="background: rgba(14, 165, 233, 0.08); color: var(--accent-secondary);">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                            </svg>
+                        </div>
+                        <h3>Insurance Advisory</h3>
+                        <p>Fiduciary coverage audits matching life, term, and healthcare plans. We help you choose commission-free direct products to protect what matters.</p>
+                        <ul class="service-features">
+                            <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Custom Term Audit Sheets</li>
+                            <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Claims Ratio Analysis</li>
+                        </ul>
+                        <button class="btn btn-outline" style="width: 100%; border-color: rgba(14, 165, 233, 0.4); color: var(--accent-secondary);" onclick="openServiceModal('insurance')">Calculate Coverage</button>
+                    </div>
+
+                    <!-- Service 2: Credit Card -->
+                    <div class="glass-card service-card">
+                        <div class="service-card-icon" style="background: rgba(139, 92, 246, 0.08); color: var(--accent-purple);">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
+                            </svg>
+                        </div>
+                        <h3>Premium Credit Cards</h3>
+                        <p>Match your lifestyle with credit cards that optimize travel rewards, dining cashback, and exclusive lounge entries. No hidden fee tricks.</p>
+                        <ul class="service-features">
+                            <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Reward Yield Comparisons</li>
+                            <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Fee Waiver Eligibility</li>
+                        </ul>
+                        <button class="btn btn-outline" style="width: 100%; border-color: rgba(139, 92, 246, 0.4); color: var(--accent-purple);" onclick="openServiceModal('credit-card')">Find Your Card Match</button>
+                    </div>
+
+                    <!-- Service 3: Bank Account -->
+                    <div class="glass-card service-card">
+                        <div class="service-card-icon" style="background: rgba(16, 185, 129, 0.08); color: var(--accent-primary);">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                            </svg>
+                        </div>
+                        <h3>High-Yield Savings</h3>
+                        <p>Locate bank accounts offering premium interest rates (up to 7.2% APR) and minimal balances, combined with low-cost forex rates.</p>
+                        <ul class="service-features">
+                            <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Zero Maintenance Accounts</li>
+                            <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Multi-currency Forex Cards</li>
+                        </ul>
+                        <button class="btn btn-outline" style="width: 100%; border-color: rgba(16, 185, 129, 0.4); color: var(--accent-primary);" onclick="openServiceModal('bank-account')">Compare Accounts</button>
+                    </div>
+
+                    <!-- Service 4: Personal Loan -->
+                    <div class="glass-card service-card">
+                        <div class="service-card-icon" style="background: rgba(245, 158, 11, 0.08); color: var(--accent-warning);">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                        <h3>Personal Loan Advisor</h3>
+                        <p>Calculate your borrowing costs, check credit parameters, and discover banks offering competitive non-leveraged credit rates.</p>
+                        <ul class="service-features">
+                            <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Zero Foreclosure Charges</li>
+                            <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Rate Optimization Matching</li>
+                        </ul>
+                        <button class="btn btn-outline" style="width: 100%; border-color: rgba(245, 158, 11, 0.4); color: var(--accent-warning);" onclick="openServiceModal('personal-loan')">Check Interest Rates</button>
+                    </div>
+
+                    <!-- Service 5: Demat Account -->
+                    <div class="glass-card service-card">
+                        <div class="service-card-icon" style="background: rgba(16, 185, 129, 0.08); color: var(--accent-primary);">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M7 12l3-3 3 3 4-4M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                            </svg>
+                        </div>
+                        <h3>Demat Broker Selection</h3>
+                        <p>Analyze transaction costs, leverage options, margin funding terms, and API capabilities of discount vs. full-service depository institutions.</p>
+                        <ul class="service-features">
+                            <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Fee Sweeping Analysis</li>
+                            <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Margin Capital Auditing</li>
+                        </ul>
+                        <button class="btn btn-outline" style="width: 100%; border-color: rgba(16, 185, 129, 0.4); color: var(--accent-primary);" onclick="openServiceModal('demat-account')">Broker Comparison</button>
+                    </div>
+
+                    <!-- Service 6: IPO Review -->
+                    <div class="glass-card service-card">
+                        <div class="service-card-icon" style="background: rgba(14, 165, 233, 0.08); color: var(--accent-secondary);">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                            </svg>
+                        </div>
+                        <h3>IPO Advisory Desk</h3>
+                        <p>Analyze upcoming draft prospectuses, study balance sheet strengths, trace subscription bids, and follow daily Grey Market Premiums.</p>
+                        <ul class="service-features">
+                            <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> SWOT Risk Mapping</li>
+                            <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Realtime Allocation Chance</li>
+                        </ul>
+                        <a href="ipos.html" class="btn btn-outline" style="width: 100%; border-color: rgba(14, 165, 233, 0.4); color: var(--accent-secondary); text-align: center; display: block;">Explore Reviews</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Latest IPO Review Section -->
+        <section class="section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <span class="hero-tag">Market Intelligence</span>
+                    <h2>Latest IPO Reviews & Analyst Verdicts</h2>
+                    <p>Fiduciary tracking of active primary offerings. We review company cash flows, leverage factors, and listing premium updates.</p>
+                </div>
+
+                <div class="services-grid" id="latestIposContainer">
+                    <!-- Solaris Energy (Spotlight) -->
+                    <div class="glass-card ipo-card">
+                        <div class="ipo-card-header">
+                            <div class="ipo-logo-wrap">
+                                <div class="ipo-logo-letter">S</div>
+                                <div class="ipo-title-meta">
+                                    <h3>Solaris Green Energy</h3>
+                                    <span class="ipo-date">Renewable Utilities</span>
+                                </div>
+                            </div>
+                            <span class="ipo-badge badge-active">active</span>
+                        </div>
+                        <div class="ipo-details-table">
+                            <div class="ipo-detail-item">
+                                <span class="ipo-detail-label">Price Band</span>
+                                <span class="ipo-detail-val">₹180 - ₹195</span>
+                            </div>
+                            <div class="ipo-detail-item" style="text-align: right;">
+                                <span class="ipo-detail-label">Issue Size</span>
+                                <span class="ipo-detail-val">₹2,200 Cr</span>
+                            </div>
+                            <div class="ipo-detail-item" style="margin-top: 0.5rem;">
+                                <span class="ipo-detail-label">Lot Size</span>
+                                <span class="ipo-detail-val">75 Shares</span>
+                            </div>
+                            <div class="ipo-detail-item" style="text-align: right; margin-top: 0.5rem;">
+                                <span class="ipo-detail-label">GMP Premium</span>
+                                <span class="ipo-detail-val text-emerald">+₹85 (43.5%)</span>
+                            </div>
+                        </div>
+                        <div class="ipo-progress-wrap">
+                            <div class="ipo-progress-label">
+                                <span>Subscription Status</span>
+                                <span>Subscribed: <strong>19.2x</strong></span>
+                            </div>
+                            <div class="ipo-progress-bar-bg">
+                                <div class="ipo-progress-bar-fg" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                        <div class="ipo-verdict-section">
+                            <div class="verdict-info">
+                                <label>Analyst Verdict</label>
+                                <span class="verdict-rating apply">Apply</span>
+                            </div>
+                            <span class="ipo-gmp-badge" style="background: rgba(16, 185, 129, 0.08); color: var(--accent-primary); border-color: rgba(16, 185, 129, 0.2)">High Growth</span>
+                        </div>
+                        <div class="ipo-card-actions">
+                            <button class="btn btn-secondary" onclick="openIPOModal('solaris-energy')">Read Full Review</button>
+                            <a href="tools.html?ipo=solaris-energy" class="btn btn-outline" style="text-align: center;">Allotment Predictor</a>
+                        </div>
+                    </div>
+
+                    <!-- Apex Cybersecurity -->
+                    <div class="glass-card ipo-card">
+                        <div class="ipo-card-header">
+                            <div class="ipo-logo-wrap">
+                                <div class="ipo-logo-letter">A</div>
+                                <div class="ipo-title-meta">
+                                    <h3>Apex Cybersecurity</h3>
+                                    <span class="ipo-date">Cybersecurity & SaaS</span>
+                                </div>
+                            </div>
+                            <span class="ipo-badge badge-active">active</span>
+                        </div>
+                        <div class="ipo-details-table">
+                            <div class="ipo-detail-item">
+                                <span class="ipo-detail-label">Price Band</span>
+                                <span class="ipo-detail-val">₹520 - ₹545</span>
+                            </div>
+                            <div class="ipo-detail-item" style="text-align: right;">
+                                <span class="ipo-detail-label">Issue Size</span>
+                                <span class="ipo-detail-val">₹1,450 Cr</span>
+                            </div>
+                            <div class="ipo-detail-item" style="margin-top: 0.5rem;">
+                                <span class="ipo-detail-label">Lot Size</span>
+                                <span class="ipo-detail-val">27 Shares</span>
+                            </div>
+                            <div class="ipo-detail-item" style="text-align: right; margin-top: 0.5rem;">
+                                <span class="ipo-detail-label">GMP Premium</span>
+                                <span class="ipo-detail-val text-emerald">+₹145 (26.6%)</span>
+                            </div>
+                        </div>
+                        <div class="ipo-progress-wrap">
+                            <div class="ipo-progress-label">
+                                <span>Subscription Status</span>
+                                <span>Subscribed: <strong>8.1x</strong></span>
+                            </div>
+                            <div class="ipo-progress-bar-bg">
+                                <div class="ipo-progress-bar-fg" style="width: 55%;"></div>
+                            </div>
+                        </div>
+                        <div class="ipo-verdict-section">
+                            <div class="verdict-info">
+                                <label>Analyst Verdict</label>
+                                <span class="verdict-rating apply">Apply</span>
+                            </div>
+                            <span class="ipo-gmp-badge" style="background: rgba(16, 185, 129, 0.08); color: var(--accent-primary); border-color: rgba(16, 185, 129, 0.2)">High ARR Growth</span>
+                        </div>
+                        <div class="ipo-card-actions">
+                            <button class="btn btn-secondary" onclick="openIPOModal('apex-cybersecurity')">Read Full Review</button>
+                            <a href="tools.html?ipo=apex-cybersecurity" class="btn btn-outline" style="text-align: center;">Allotment Predictor</a>
+                        </div>
+                    </div>
+
+                    <!-- NovaGene Diagnostics -->
+                    <div class="glass-card ipo-card">
+                        <div class="ipo-card-header">
+                            <div class="ipo-logo-wrap">
+                                <div class="ipo-logo-letter" style="color: var(--accent-danger);">N</div>
+                                <div class="ipo-title-meta">
+                                    <h3>NovaGene Diagnostic</h3>
+                                    <span class="ipo-date">Healthcare & Biotech</span>
+                                </div>
+                            </div>
+                            <span class="ipo-badge badge-active">active</span>
+                        </div>
+                        <div class="ipo-details-table">
+                            <div class="ipo-detail-item">
+                                <span class="ipo-detail-label">Price Band</span>
+                                <span class="ipo-detail-val">₹340 - ₹360</span>
+                            </div>
+                            <div class="ipo-detail-item" style="text-align: right;">
+                                <span class="ipo-detail-label">Issue Size</span>
+                                <span class="ipo-detail-val">₹850 Cr</span>
+                            </div>
+                            <div class="ipo-detail-item" style="margin-top: 0.5rem;">
+                                <span class="ipo-detail-label">Lot Size</span>
+                                <span class="ipo-detail-val">40 Shares</span>
+                            </div>
+                            <div class="ipo-detail-item" style="text-align: right; margin-top: 0.5rem;">
+                                <span class="ipo-detail-label">GMP Premium</span>
+                                <span class="ipo-detail-val text-danger">-₹10 (-2.8%)</span>
+                            </div>
+                        </div>
+                        <div class="ipo-progress-wrap">
+                            <div class="ipo-progress-label">
+                                <span>Subscription Status</span>
+                                <span>Subscribed: <strong>0.28x</strong></span>
+                            </div>
+                            <div class="ipo-progress-bar-bg">
+                                <div class="ipo-progress-bar-fg" style="width: 10%; background: var(--accent-danger);"></div>
+                            </div>
+                        </div>
+                        <div class="ipo-verdict-section">
+                            <div class="verdict-info">
+                                <label>Analyst Verdict</label>
+                                <span class="verdict-rating avoid">Avoid</span>
+                            </div>
+                            <span class="ipo-gmp-badge" style="background: rgba(244, 63, 94, 0.08); color: var(--accent-danger); border-color: rgba(244, 63, 94, 0.2)">Valuation High</span>
+                        </div>
+                        <div class="ipo-card-actions">
+                            <button class="btn btn-secondary" onclick="openIPOModal('novagene-biotech')">Read Full Review</button>
+                            <a href="tools.html?ipo=novagene-biotech" class="btn btn-outline" style="text-align: center;">Allotment Predictor</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Courses Section -->
+        <section class="section-padding" style="background: var(--bg-secondary); border-top: 1px solid var(--border-light); border-bottom: 1px solid var(--border-light);">
+            <div class="container">
+                <div class="section-header">
+                    <span class="hero-tag">Financial Literacy</span>
+                    <h2>Educational Academies & Courses</h2>
+                    <p>Upgrade your investment capabilities. Learn professional portfolio construction and DRHP analysis with certified modules.</p>
+                </div>
+
+                <div class="courses-grid">
+                    <!-- Course 1 -->
+                    <div class="glass-card course-card">
+                        <span class="course-badge beginner">Beginner</span>
+                        <h3 style="font-size: 1.4rem; margin-bottom: 0.75rem;">A-Z Stock Market Investing</h3>
+                        <p style="color: var(--text-secondary); margin-bottom: 1.5rem; font-size: 0.9rem;">
+                            Master the mechanics of market operations, long-term asset allocation, fundamental ratios (P/E, D/E, RoCE), and index fund strategies.
+                        </p>
+                        <div class="course-progress">
+                            <div class="course-progress-meta">
+                                <span>12 Modules &bull; 8 Hours Video</span>
+                                <span class="progress-val" id="progressVal-stock">0% Complete</span>
+                            </div>
+                            <div class="course-progress-bar">
+                                <div class="course-progress-fill" id="progressFill-stock" style="width: 0%;"></div>
+                            </div>
+                        </div>
+                        <div style="display: flex; gap: 0.75rem; margin-top: 1.5rem;">
+                            <button class="btn btn-primary" style="flex: 1; padding: 0.6rem 0.5rem; font-size: 0.85rem;" onclick="enrollCourse('stock')">Enroll Now</button>
+                            <button class="btn btn-outline" style="flex: 1; padding: 0.6rem 0.5rem; font-size: 0.85rem;" onclick="openSyllabus('stock')">View Syllabus</button>
+                        </div>
+                    </div>
+
+                    <!-- Course 2 -->
+                    <div class="glass-card course-card">
+                        <span class="course-badge advanced">Advanced</span>
+                        <h3 style="font-size: 1.4rem; margin-bottom: 0.75rem;">IPO Valuation & SWOT Auditing</h3>
+                        <p style="color: var(--text-secondary); margin-bottom: 1.5rem; font-size: 0.9rem;">
+                            Learn DRHP reading hacks, subscription momentum strategies, allotment optimization models, and GMP premium pricing calculations.
+                        </p>
+                        <div class="course-progress">
+                            <div class="course-progress-meta">
+                                <span>8 Modules &bull; 6 Hours Video</span>
+                                <span class="progress-val" id="progressVal-ipo">0% Complete</span>
+                            </div>
+                            <div class="course-progress-bar">
+                                <div class="course-progress-fill" id="progressFill-ipo" style="width: 0%;"></div>
+                            </div>
+                        </div>
+                        <div style="display: flex; gap: 0.75rem; margin-top: 1.5rem;">
+                            <button class="btn btn-primary" style="flex: 1; padding: 0.6rem 0.5rem; font-size: 0.85rem;" onclick="enrollCourse('ipo')">Enroll Now</button>
+                            <button class="btn btn-outline" style="flex: 1; padding: 0.6rem 0.5rem; font-size: 0.85rem;" onclick="openSyllabus('ipo')">View Syllabus</button>
+                        </div>
+                    </div>
+
+                    <!-- Course 3 -->
+                    <div class="glass-card course-card">
+                        <span class="course-badge intermediate">Intermediate</span>
+                        <h3 style="font-size: 1.4rem; margin-bottom: 0.75rem;">Tax Optimization & Wealth Shielding</h3>
+                        <p style="color: var(--text-secondary); margin-bottom: 1.5rem; font-size: 0.9rem;">
+                            Structure tax-saving portfolios, master direct equity tax loss harvesting, capital gains offsets, and HNI trust inheritances setup.
+                        </p>
+                        <div class="course-progress">
+                            <div class="course-progress-meta">
+                                <span>10 Modules &bull; 7 Hours Video</span>
+                                <span class="progress-val" id="progressVal-tax">0% Complete</span>
+                            </div>
+                            <div class="course-progress-bar">
+                                <div class="course-progress-fill" id="progressFill-tax" style="width: 0%;"></div>
+                            </div>
+                        </div>
+                        <div style="display: flex; gap: 0.75rem; margin-top: 1.5rem;">
+                            <button class="btn btn-primary" style="flex: 1; padding: 0.6rem 0.5rem; font-size: 0.85rem;" onclick="enrollCourse('tax')">Enroll Now</button>
+                            <button class="btn btn-outline" style="flex: 1; padding: 0.6rem 0.5rem; font-size: 0.85rem;" onclick="openSyllabus('tax')">View Syllabus</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blogs Section -->
+        <section class="section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <span class="hero-tag">Recent Insights</span>
+                    <h2>Fiduciary Research & Market Blogs</h2>
+                    <p>Get data-rich analyses from our investment desk partners. Absolute transparency without financial sponsorships.</p>
+                </div>
+
+                <div class="blogs-grid">
+                    <!-- Blog 1 -->
+                    <div class="glass-card blog-card">
+                        <div class="blog-card-header">
+                            <div class="blog-category">IPOs & Equities</div>
+                            <span style="font-size: 2rem;">📊</span>
+                        </div>
+                        <div class="blog-meta">
+                            <span>✍️ R. Raghavan</span>
+                            <span>📅 July 4, 2026</span>
+                            <span>⏱️ 5 min read</span>
+                        </div>
+                        <h3 style="font-size: 1.3rem; margin-bottom: 0.75rem;">Understanding Grey Market Premium (GMP) Dynamics</h3>
+                        <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1.5rem; flex-grow: 1;">
+                            Grey Market Premium is the primary indicator of listing day gains. But how is it compiled, who makes the market, and should you bid purely based on GMP?
+                        </p>
+                        <button class="btn btn-outline" style="align-self: flex-start;" onclick="readBlog('gmp')">Read Article</button>
+                    </div>
+
+                    <!-- Blog 2 -->
+                    <div class="glass-card blog-card">
+                        <div class="blog-card-header">
+                            <div class="blog-category">Wealth Management</div>
+                            <span style="font-size: 2rem;">🏦</span>
+                        </div>
+                        <div class="blog-meta">
+                            <span>✍️ Vikram Malhotra</span>
+                            <span>📅 June 28, 2026</span>
+                            <span>⏱️ 7 min read</span>
+                        </div>
+                        <h3 style="font-size: 1.3rem; margin-bottom: 0.75rem;">5 Costly Mistakes to Avoid With Demat Accounts</h3>
+                        <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1.5rem; flex-grow: 1;">
+                            From hidden AMC tariffs to high margins interest structures, discount brokers hide significant fees. We auditing brokerage setups to save your yield.
+                        </p>
+                        <button class="btn btn-outline" style="align-self: flex-start;" onclick="readBlog('demat')">Read Article</button>
+                    </div>
+
+                    <!-- Blog 3 -->
+                    <div class="glass-card blog-card">
+                        <div class="blog-card-header">
+                            <div class="blog-category">Financial Planning</div>
+                            <span style="font-size: 2rem;">🛡️</span>
+                        </div>
+                        <div class="blog-meta">
+                            <span>✍️ Sarah Jenkins</span>
+                            <span>📅 June 21, 2026</span>
+                            <span>⏱️ 6 min read</span>
+                        </div>
+                        <h3 style="font-size: 1.3rem; margin-bottom: 0.75rem;">Term Insurance vs Mutual Funds SIP Balancing</h3>
+                        <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1.5rem; flex-grow: 1;">
+                            Do not combine insurance and investments in toxic plans like ULIPs. Keep high value coverage and low cost equity separate to multiply compound returns.
+                        </p>
+                        <button class="btn btn-outline" style="align-self: flex-start;" onclick="readBlog('insurance')">Read Article</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dynamic Simulated client onboarding tracker CTA -->
+        <section class="section-padding" style="background: linear-gradient(180deg, transparent 0%, rgba(16, 185, 129, 0.03) 100%);">
+            <div class="container" style="text-align: center; max-width: 800px;">
+                <h2 style="font-size: 2.5rem; margin-bottom: 1.5rem;">Ready to Align Your Investments?</h2>
+                <p style="color: var(--text-secondary); font-size: 1.15rem; margin-bottom: 2.5rem;">
+                    Take our 2-minute service matching questionnaire to identify target growth opportunities tailored to your risk parameters, or speak directly to a certified advisor.
+                </p>
+                <div style="display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap;">
+                    <a href="services.html#service-match" class="btn btn-primary">Find Your Service Match</a>
+                    <a href="contact.html" class="btn btn-secondary">Visit Our Offices</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="logo" style="margin-bottom: 1.5rem;">
+                    <div class="logo-icon">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                        </svg>
+                    </div>
+                    Finance<span>View</span>
+                </a>
+                <p>Sophisticated financial client advisory, custom wealth plans, and institutional IPO intelligence under one platform.</p>
+                <div class="footer-socials">
+                    <a href="#" class="social-icon" aria-label="Twitter">TW</a>
+                    <a href="#" class="social-icon" aria-label="LinkedIn">LN</a>
+                    <a href="#" class="social-icon" aria-label="YouTube">YT</a>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="footer-title">Pages</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home Landing</a></li>
+                    <li><a href="services.html">Client Services</a></li>
+                    <li><a href="ipos.html">IPO Review Center</a></li>
+                    <li><a href="tools.html">SIP Calculators</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="footer-title">Resources</h4>
+                <ul class="footer-links">
+                    <li><a href="#" onclick="window.showToast('Disclaimer: FinanceView is an independent research house. Past performance does not guarantee future returns.', 'error'); return false;">Disclaimer Info</a></li>
+                    <li><a href="#" onclick="window.showToast('Privacy Policy: All client data is encrypted and held under strict fiduciary bounds.')">Privacy Policy</a></li>
+                    <li><a href="#" onclick="window.showToast('Support: Reach out to portal support at support@financeview.com')">Support Desk</a></li>
+                    <li><a href="#" onclick="window.showToast('Careers: We are looking for research interns! Send resume to hr@financeview.com')">Join Our Team</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-newsletter">
+                <h4 class="footer-title">Subscribe to GMP Updates</h4>
+                <p>Get premium daily analyst notes on upcoming IPO subscription rates and grey market valuations.</p>
+                <form class="newsletter-form" onsubmit="event.preventDefault(); window.showToast('Subscribed! IPO alerts will be sent to your email.'); this.reset();">
+                    <input type="email" placeholder="name@domain.com" required aria-label="Email address for newsletter">
+                    <button class="btn btn-primary" type="submit" style="padding: 0.75rem 1rem;">Join</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <span>&copy; 2026 FinanceView Advisory Services Pvt Ltd. All rights reserved.</span>
+            <span>Registered Investment Advisor #INA882901</span>
+        </div>
+    </footer>
+
+    <!-- Load ChartJS & Local Data Databases -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/charts.js"></script>
+    <script src="js/ipo.js"></script>
+</body>
+</html>
